@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js 05t</title>
+</head>
+<body>
+    <h1>Assalamu alaikum......</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore necessitatibus rem excepturi eaque exercitationem voluptatibus quae perferendis cum error, omnis, labore odit reprehenderit esse deserunt minima fugiat saepe praesentium accusantium incidunt, maxime porro eos eligendi quasi et. Fugiat hic exercitationem at obcaecati veritatis, assumenda, distinctio laudantium tenetur tempora minima placeat?</p>
+
+         <script>
+             var message;
+             message = 'hi hassan';
+             console.log(message);
+             // this is a single line comment..... .
+             
+             /* thi is a
+                multi 
+                line 
+                comment.....*/
+
+            var age=20;
+            var hr=8.18
+            console.log(age); //20
+            console.log(hr);  //8.18  
+
+            var octNum = 0243;
+            var hexNum = 0XDA5
+            console.log(octNum);  //163 
+            console.log(hexNum);  //3493
+
+            var name = 'i am hassan';
+            var hr = "sis & bro";
+            console.log(name); //i am hassan
+            console.log(hr);   //sis & bro
+
+            var a=null;
+            console.log(a);  //null
+
+            var a=818
+            console.log(a); //818
+            a='hassan';
+            console.log(typeof a); //string
+
+            var a=10+25;
+            console.log(a);  //35
+
+            a=a-5;
+            console.log(a);  //30
+
+            a=a*2;
+            console.log(a);  //60
+
+            a=a/3;
+            console.log(a);  //20
+            
+            var a=158;
+            a=a%5;
+            console.log(a)  //3
+
+            a=a+12;
+            console.log(a); //15
+
+            a++;
+            console.log(a);  //16
+             
+            ++a;
+            console.log(a);   //17
+
+            var x=--a-2;
+            console.log(x);   //14
+
+            var y='sportser';
+            console.log('hassan is a '+y);  //hassan is a sportser
+ 
+       //Relational operators
+            console.log('12>4=',12>4); //true
+            console.log(25<12);        //false
+            console.log(25<=25);       //true
+            console.log(25>=24);       //true
+             
+             console.log(818==818);   //true
+             console.log(818!=818);   //false
+
+             console.log(8===8)       //true
+             console.log(8!==8)       //false
+
+       /* Logical / Boolean operators */
+             
+             //  {! (not)}
+            console.log(!true);//false
+            console.log(!10);  //false
+             
+             // {||(or)}
+            console.log(10||'ok');     //10
+            console.log("yes" || null);//yes
+            console.log("" || 25);     //25
+            console.log(undefined || false);//false
+             
+             //{&&(AND)}
+            console.log(10 && 'ok');   //ok
+            console.log("yes" && null); //null
+            console.log("" && 25);      //""
+            console.log(undefined && false);//undefined
+
+       /*conditional & Assignment operators*/
+        
+        // syntax
+        //   variableName= booleanExpress ? trueValue : falseValue;
+            
+            var age= 18 , isMinor;
+            isMinor= age>=18 ? 'yes' : 'no';
+            console.log(isMinor);            //no
+
+            var age= 15 , isMinor;
+            isMinor= age>=18 ? 'yes' : 'no';
+             console.log(isMinor);            //yes
+
+        // compound operators
+        var x=500,y=318;
+       // (x=x+y;)=(x += y;)
+        x += y;
+        console.log(x);   //818
+
+        var z = 8;
+        z += 4;
+        console.log(z);  //12
+        
+        z -= 1;
+        console.log(z);  //11
+
+        z *= 5;
+        console.log(z);  //55
+
+        z /= 11;
+        console.log(z);  //5
+
+        z %= 2;
+        console.log(z);   //1
+
+       /*  if , if else , else statements*/
+           
+           var age = 16;
+           var ptPn = true;
+           var ageR = 46
+
+           if (45>= ageR && age >= 18 && ptPn){
+               console.log('you are allowed')
+           }
+           else{
+               console.log('you are not allowed')
+           }
+       
+       //Do while Loop
+          
+      /* do{
+           console.log('playing game...');
+           var continuePlaying = confirm('continue playing?');
+        }  while (continuePlaying);
+         
+         console.log('the end');
+      */   
+
+        //while loop
+       var count=10;
+       while (count>0){
+           console.log('count:', count--);
+       } 
+        console.log('while loop ended');
+
+        var count=1;
+       while (count<=10){
+           console.log('count:', count++);
+       } 
+        console.log('while loop ended');
+
+        //for loop
+        //syntax
+     /*for (initializeCounter; condition; incrementCounter){
+         *block of statements
+        }
+     */
+         for (var x= 1; x <= 7; x++);{
+             console.log('day:',x);
+         } 
+ 
+      //break and continue
+     
+  /*  var month = prompt('hi hassa', 3);
+    for (var ddays=1; days <=31; days++){
+        if((month == 4 || month == 6 || month == 9 || month == 11)&& days == 31) continue;
+        console.log('days:',days);
+        if (month == 2 && days == 28 ) break;
+    }
+ */
+
+   // Using for loop as while loop
+       var count = 10;
+       for (;count>0;){
+           console.log('count:',count--);
+       }
+
+      
+       
+
+
+       
+         </script>
+    </body>
+</html>

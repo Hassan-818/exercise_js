@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+
+<h3 id="m"></h3>
+<p id="n"></p>
+<li id="o"></li>
+<h3 id="x"></h3>
+<p id="y"></p>
+<h2><i id="z"></i></h2>
+<h2><i id="c"></i></h2>
+
+<button onclick="myfruits()">Try it</button>
+
+<p id="b"></p>
+
+<button onclick="myfriends()">Try it</button>
+
+<h2><i id="h"></i></h2>
+
+<p id="demo"></p>
+
+
+<script>
+
+//00000    
+var friends = ["ayas", "rila", "mufeen"];
+document.getElementById("m").innerHTML =  friends;
+
+//1111111111
+var color = new Array("red", "blue", 12);
+document.getElementById("n").innerHTML = color[2];
+
+//22222222
+var cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+document.getElementById("o").innerHTML = cars;
+
+//3333
+var myNname = {firstName:"hasran", lastName:"ahmed", age:19};
+document.getElementById("x").innerHTML = myNname["firstName"];
+
+//4444
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("y").innerHTML = fruits.length;
+
+//5555
+var friends, text, fLen, i;
+friends = ["rila", "mufeen", "ayas", "faseer"];
+fLen = friends.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + friends[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("z").innerHTML = text;
+
+
+//////////
+var color, text;
+color = ["red", "Orange", "green", "blue"];
+
+text = "<ul>";
+    color.forEach(myFunction);
+text += "</ul>";
+document.getElementById("c").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+
+//77777
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("b").innerHTML = fruits;
+
+function myfruits() {
+  fruits.push("Lemon");
+  document.getElementById("b").innerHTML = fruits;
+}
+
+////8888
+var friends, text, fLen, i;
+ friends = ["sibary", "rikas", "raisan", "safran"];
+ fLen = friends.length;
+
+ text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + friends[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("h").innerHTML = text;
+
+function myfriends() {
+  friends[friends.length] = "sarraj";
+  document.getElementById("h").innerHTML =friends;
+}
+
+//99999
+
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[6] = "Lemon";
+
+fLen = fruits.length;
+text = "";
+for (i = 0; i < fLen; i++) {
+  text += fruits[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+</script>
+
+</body>
+</html>
